@@ -58,7 +58,7 @@ const FileDetailsDisplayer = (props) => {
     if (props.image !== "") {
       try {
         const response = await axios.get(
-          "https://mp3-tags-corrector.herokuapp.com/image",
+          "https://mp3-tags-corrector.onrender.com/image",
           {
             params: {
               imageurl: props.image,

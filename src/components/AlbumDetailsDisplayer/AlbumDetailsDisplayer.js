@@ -15,7 +15,7 @@ const AlbumDetailsDisplayer = (props) => {
         let response;
         if (props.albumToDisplay.id === props.albumToDisplay.master_id) {
           response = await axios.get(
-            "https://mp3-tags-corrector.herokuapp.com/master",
+            "https://mp3-tags-corrector.onrender.com/master",
             {
               params: {
                 id: props.albumToDisplay.id,
@@ -24,7 +24,7 @@ const AlbumDetailsDisplayer = (props) => {
           );
         } else {
           response = await axios.get(
-            "https://mp3-tags-corrector.herokuapp.com/release",
+            "https://mp3-tags-corrector.onrender.com/release",
             {
               params: {
                 id: props.albumToDisplay.id,
